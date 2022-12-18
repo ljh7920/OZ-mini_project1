@@ -257,7 +257,7 @@ ul, ol{
     animation: typing 6s steps(300), blink step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    text-shadow: 5px 5px px black;
+    text-shadow: 5px 5px 10px black;
   }
 
   #mainshoes{
