@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <link rel="stylesheet" href="./randing_page.css">
+    <link href="./randing_page_mobile.css" media="screen and (max-width: 950px)" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+</head>
+<body>
+<div class="header">
+    <ul>
+        <li class="on" class="a"><a href="#">NEXTRUNNERS</a></li>
+        <li><a href="#">앞으로 남은 시간??</a></li>
+        <li><a href="#">소개 영상</a></li>
+        <li><a href="#">모집 요강</a></li>
+        <li><a href="#">참가시 혜택</a></li>
+        <li><a href="#">문의 할 곳</a></li>
+    </ul>
+</div>
+<div class="container"> 
+    <div class="popup-wrap" id="popup"> 
+      <div class="popup">	
+        <div class="popup-head">	
+            <span class="head-title"><h3>참가신청서</h3></span>
+        </div>
+        <div class="popup-body">
+          <div class="body-content">
+            <div class="body-titlebox">
+              <h2>NextRunners 마라톤</h2>
+            </div>
+            <div class="body-contentbox">
+                <div class = input_info >
+                    <div class = "name">
+                        <p class = "value">이름</p>
+                        <input id = "name_value" placeholder="홍길동">
+                    </div>
+                    <div class = "phone">
+                        <p class = "value">전화번호</p>
+                        <input id = "phone_value" type="text" 
+                        placeholder="010-1234-5678"
+    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                    </div>
+                    <Br>
+                        <p>
+                            연락처를 남겨주시면 순차적으로 연락드리겠습니다.
+                        </p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-foot">
+          <span class="pop-btn confirm" id="confirm">확인</span>
+          <span class="pop-btn close" id="close">창 닫기</span>
+        </div>
+      </div>
+     </div>
+  </div>
+</div>
+<div class="content">
+    <div class="cnt01">
+        <div class="meteor-wrap"></div>
+        <section class="section1">
+            <div class="row"><!--열-->
+
+                <div class="col-xl-5 col-md-6 imgbox">
+                    <img id="mainshoes" src="./main_page/image.png" alt="신발" >
+                </div>
+                <div class="textbox">
+                    <div class="col-xl-5 col-md-6 text-light">
+                        <div>
+                            <div class="mb-4"><!--mb-4 == margin-bottom:4px-->
+                                <span><h1 class = "display-1">NEXT RUNNERS</h1></span>
+                            </div>
+                            <div style="text-align: center;">
+                            <span><H1>MARATHON</H1></span>
+                            </div> 
+                        </div>
+                        
+                        <br><br><hr><br><br>
+
+                    <div class="col-xl-5 col-md-6 text-light">
+                        <div>
+                            <div class="mb-6"><!--mb-6 == margin-bottom:px-->
+                                <span><h3>OPEN</h3></span>
+                            </div>
+                            <div>
+                            <span><h3>2022.12.25</h3></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="cnt02">
+        <section class="section2">
+            <div class="sentence">
+                <span><h1 class = "display-1"># Try, Start</h1></span><br>
+                <p>모집 임박! 2022년 마지막 달려 보는건 어때?</p>
+            </div>     
+            <div class="dateCard">
+                <div class="number">
+                    <span class="timer-component">
+                        <div class="getTime" data-set id="DAY"><h4></h4></div>
+                        <p id="time-day" class="time-subtitle">Days</p>
+                    </span>
+                    
+                    <p class="timer-colon"><strong>:</strong></p>
+
+                    <span class="timer-component">
+                        <div class="getTime" data-set id="HOUR"><h4></h4></div>
+                        <p id="time-day" class="time-subtitle">Hours</p>
+                    </span>
+                    
+                    <p class="timer-colon"><strong>:</strong></p>
+
+                    <span class="timer-component">
+                        <div class="getTime" data-set id="MIN"><h4></h4></div>
+                        <p id="time-day" class="time-subtitle">Minutes</p>
+                    </span>
+                    
+                    <p class="timer-colon"><strong>:</strong></p>
+
+                    <span class="timer-component">
+                        <div class="getTime" data-set id="SEC"><h4></h4></div>   
+                        <p id="time-day" class="time-subtitle">Seconds</p>
+                    </span>
+                </div>       
+            </div>
+        </section>
+        <div id = "gif"><img src="./main_page/walking-gangster-walking-unscreen.gif"></div>
+
+    </div>
+    <div class="cnt03">
+        <div class = "movie">
+            <iframe id = "movie_link" width="70%" height="80%"  
+            src="https://www.youtube.com/embed/Z8FTcOGqqwo?mute=1&controls=0&autoplay=1&modestbranding=1&loop=1"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;  
+          encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </div>
+     </div>
+    <div class="cnt04">
+        <section>
+            <div class="container">
+                <hr width = "100%" color = "white" size = "10">
+                <br>
+                <br>
+                <div class="box1 box"><p class = "title">01. 대회 개요</p>
+                    <div class="sub_title"><p>> 대회명</p></div>
+                        <div class="contents"><p>NextRunner OZ 하프마라톤</div>
+                    <div class="sub_title"><p>> 일시</p></div>
+                        <div class="contents"> <p>-2022년 12월 25일(일) 오전 10시 출발</p></div>
+                    <div class="sub_title"><p>> 장소</p></div>
+                        <div class="contents"><p>올림픽공원, 잠실종합운동장 일대</div>  
+                    <div class="sub_title"><p>> 부문</p></div>   
+                        <div class="contents"><p>-21,0975km(하프마라톤)</p></div>         
+                </div>
+
+
+                <div class="box2 box"><p class = "title">02. 접수 방법<p>
+                    <div class="sub_title"><p>> 얼리버드 VIP 접수<br>(12월 6일~12월 10일)</p></div>
+                        <div class="contents"><p> -패키지 선착순 구매를 통해 접수</p> </div>   
+                        <div class="contents"><p>-구매처: 카카오 선물하기</p></div>   
+                        <div class="contents"><p>-NextRunner 매장(강남, 신사, 홍대, 잠실)</p></div>         
+                    <div class="sub_title"><p>> 일반접수<br>(12월 12일~12월 23일):<br>선착순 접수</div>
+                        <div class="contents"><p>-공식홈페이지(https://ozcodingschool.com/) 및 NextRunner 매장 (강남, 신사, 홍대, 잠실)</p></div>
+                </div>
+
+
+                <div class="box3 box"> <p class = "title">03. RUN OZ VIP</p>
+                    <div class="sub_title"><p>> 대상자</p></div>
+                        <div class="contents"><p>-얼리버드 vip접수자 </p></div>   
+                        <div class="contents"><p> -일반 접수자중 early bird VIP 9만원권 사용 소지자<p></div>         
+                    <div class="sub_title"><p>> 혜택</p></div>
+                        <div class="contents"><p>-VIP special package</p></div>
+                        <div class="contents"><p>-대회 현장 vip라운지 제공</p></div>
+                        <div class="contents"><p>-게토레이, 삼다수, 이한별CEO 로고 티셔츠 등</p></div>
+                        <div class="contents"><p>-아이폰 13, 맥북 프로 중 택 1</p></div>
+                </div>
+                <hr width = "100%" color = "white" size = "10">
+            </div>
+         </section>
+    </div>
+    <div class="cnt05">
+        <section class = "prize">
+            <div id = "celebrate">
+                <h1 class="display-1 title">Race&nbsp;&nbsp; <span>Pack</span></h1>
+                <div class="prize-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./award_img/iphone.png"></div>
+                        <div class="swiper-slide"><img src="./award_img/drink1-removebg-preview.png"></div>
+                        <div class="swiper-slide"><img src="./award_img/drink2-removebg-preview.png"></div>
+                        <div class="swiper-slide"><img src="./award_img/drink3-removebg-preview.png"></div>
+                        <div class="swiper-slide"><img src="./award_img/ipad-removebg-preview.png"></div>
+                        <div class="swiper-slide"><img src="./award_img/nike-removebg-preview.png"></div>
+                        <div class="swiper-slide"><img src="./award_img/suncream-removebg-preview.png"></div>
+                        <div class="swiper-slide"><img src="./award_img/람보-removebg-preview.png"></div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </div>
+    <div class="cnt06">
+        <section class = "info">
+            <article class ="title"> 추가 문의</article>
+            <article class = "main_content"> next_runners@oz.codingschool</article>
+            <article class = "main_content"> 010.0000.0000</article>
+            <article class = "main_content"> 서울시 서초구 강남대로 99길 45</article>
+            <article class ="title" class = "main_content">주최</article>
+            <article class = "main_content">NextRunners</article>
+            <article class ="title" class = "main_content">후원</article>
+        </section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./logo/life_logo.jpeg"></div>
+                <div class="swiper-slide"><img src="./logo/oz_logo.png"></div>
+                <div class="swiper-slide"><img src="./logo/jr_logo-removebg-preview.png"></div>
+                <div class="swiper-slide"><img src="./logo/nextrunnders_logo-removebg-preview.png"></div>
+                <div class="swiper-slide"><img src="./logo/samsung.png"></div>
+                <div class="swiper-slide"><img src="./logo/apple_log.png"></div>
+                <div class="swiper-slide"><img src="./logo/logo (2).png"></div>
+                <div class="swiper-slide"><img src="./logo/logo (1).png"></div>
+                <div class="swiper-slide"><img src="./logo/logo (3).png"></div>
+                <div class="swiper-slide"><img src="./logo/django_logo.png"></div>
+                <div class="swiper-slide"><img src="./logo/python_logo.png"></div>
+                <div class="swiper-slide"><img src="./logo/react_logo.png"></div>
+                <div class="swiper-slide"><img src="./logo/c++logo.png"></div>
+                <div class="swiper-slide"><img src="./logo/Visual_Studio_Code_1.35_icon.svg.png"></div>
+            </div>
+        </div> 
+    </div>
+</div>
+<button id="info_btn">참가 신청</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="./randing_page.js"></script>
+</body>
+</html>

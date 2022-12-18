@@ -1,0 +1,748 @@
+/*-----------header-------------*/
+@font-face { 
+    font-family: "Human";
+    src: url("./font/HMKMRHD.TTF") format("truetype");
+    font-weight: normal;
+  } 
+*
+{
+    margin:0;padding:0; text-align: left;
+    /* font-weight: human; */
+    
+}
+body .content .cnt01, .cnt03, .cnt05
+{
+    /* background: linear-gradient(135deg,black 20%, #86c5e5); */
+    background: linear-gradient(60deg, black 0% , #6887ab,#414345);
+}
+body .content .cnt02, .cnt04, .cnt06
+{
+    /* background: linear-gradient(120deg, black,#6887ab 45%,black); */
+    background: linear-gradient(120deg, black ,#6887ab , #414345);
+
+}
+body 
+{ 
+    font: 400 1em/1.5 "Neuton"; background: #090d00; color: rgba(255,255,255,.25); text-align: center; margin: 0;
+}
+
+html, body{
+    overflow-y:hidden
+}
+.content>div
+{
+    position:relative;
+}
+.content>div>p{
+    position:absolute;
+    top:50%;
+    margin-top:-40px;
+    text-align:center;
+    width:100%;
+    font-size:80px;
+    font-weight:bold;
+    color:#fff;
+}
+/*------------popUp-------------*/
+.popup-wrap{
+    background-color:rgba(0,0,0,0); 
+    justify-content:center;
+    align-items:center;    
+    position:fixed;       
+    top:0;
+    /* left:0; */
+    right:0;
+    bottom:0;              
+    display:none; 
+    display:flex;
+    padding:15px;
+    z-index: 1;
+  }
+  .popup{
+    color: black;
+    border: 1px solid black;
+    z-index: 1;
+    width:100%;             
+    max-width:400px;          
+    border-radius:10px;      
+    overflow:hidden;         
+    background-color:skyblue; 
+    box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3); 
+  }
+  .popup-head{
+    width:100%;
+    height:50px;  
+    display:flex; 
+    align-items:center;
+    justify-content:center;
+  }
+  .popup-body{              
+    width:100%;
+    background-color:#ffffff;
+  }
+  .body-content{             
+    width:100%;
+    padding:30px;            
+  }
+  .body-titlebox{             
+    text-align:center;     
+    width:100%;
+    height:40px;
+    margin-bottom:10px;      
+  }
+  .body-contentbox{          
+    word-break:break-word;  
+    /* overflow-y:auto;        */
+    min-height:100px;         
+    max-height:200px;  
+         
+  }
+  .body-contentbox .input_info>div{
+    /* border: 10px solid black; */
+    margin-top: 5%;
+  }          
+  .body-contentbox .input_info .value{
+    /* border: 10px solid black; */
+    font-weight: bold;
+    font-size: 4vw;
+  }
+
+  .popup-foot{                      
+    width:100%;
+    height:50px;
+  }
+  .pop-btn{ 
+    display:inline-flex;           
+    width:50%;                    
+    height:100%;                 
+    justify-content:center;      
+    align-items:center;           
+    float:left;                   
+    color:black;               
+    cursor:pointer;              
+  }
+  .pop-btn.confirm{               
+    border-right:1px solid black;
+  }
+/*---------------네비게이션-------------------*/
+ul, ol{
+    list-style:none
+}
+.header{
+    opacity: 0.8;
+    position:fixed;
+    z-index:10;
+    top:0;
+    width:100%;
+    margin-left: 1.5%;
+}
+.header ul:after{
+    content:"";
+    display:block;
+    clear:both
+}
+.header ul li{
+
+    
+    float:left;
+    border-left:1px solid rgba(255, 255, 255, 0);
+    box-sizing:border-box;
+    width:16%;
+    /* box-shadow:
+        0 0 11px skyblue,
+        0 0 19px skyblue; */
+
+    margin: 0.1%;
+}
+.header ul li:first-child{border-left:none}
+.header ul li a
+{
+    box-shadow:
+    0 0 11px skyblue,
+    0 0 19px skyblue;
+
+    display:block;
+    height:30px;
+    border: 5px solid black;
+    text-align:center;
+    line-height:20px;
+    font-size:1vw;
+    font-weight: bold;
+    text-decoration:none;
+    background-color:rgba(0,0,0,0);
+    color:white
+}
+.header ul li.on a{
+    box-shadow:none;
+    background-color:silver; color:black;
+    width: 100%;
+    border: 0px;
+    line-height: 25px;
+}
+/*---------------네비게이션-------------------*/
+
+
+/*-----------------------1page start----------------------------- */
+.content .cnt01 .section1{ /*페이지 전체*/
+    /* padding: 6rem 0; */
+    height: 100%;
+    /* font-size: 1px; */    
+
+}
+.content .cnt01 .section1 .row{ /*페이지 전체*/
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    /* flex-wrap: wrap; */
+    /* align-items: stretch; */
+    justify-content:space-evenly;
+    /* border: 50px solid magenta; */
+    /* box-sizing:border-box; */
+    /* text-align: center; */
+    /* margin-right: -12px!important;
+    margin-left: -12px!important; */
+
+}
+.row > div
+{
+    
+    margin: auto;
+    width: 40%;
+    
+
+} 
+.content .cnt01 .section1 .row .textbox{  /*text box */
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 2s ease-out;
+} 
+
+
+.content .cnt01 .section1 .row .text-light img
+{   
+    
+    margin: auto;   
+}
+/* .content .cnt01 .section1 .row span
+{
+     margin: 1%; 
+    color: skyblue;
+} */
+
+.content .cnt01 .section1 .row span h1
+{
+    font-size: 4vw;
+    font-family: human;
+    /* margin-top: 20%; */
+    font-weight: bold;
+    /* width: 15ch; */
+    color: white;
+    font-style: italic;
+    animation: flicker 3s infinite alternate;
+    /* overflow: hidden; */
+    /* transform: translate(-50%); */
+    z-index: 10;
+    
+}
+.content .cnt01 .section1 .row span h3
+{
+    width: 14ch;
+    font-family: human;
+    /* border-right: 3px solid; */
+    font-size: 3vw;
+    font-weight: bold;
+    color:white;
+    text-shadow: 1px 1px 5px silver;
+    border: 5px solid sliver;
+    animation: typing 6s steps(300), blink step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: 5px 5px px black;
+  }
+
+  #mainshoes{
+    background-image: url(./main_page/XZ5V.gif);
+    background-size:auto;
+      /* background-color: white; */
+      width: 100%;
+      margin-left: 10%;
+      transform: rotate(40deg);
+      /* animation-name: back_color; */
+      animation-name: rotate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+  
+      /* text-align: center!important;  */
+  }
+    
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        
+        text-shadow:
+        0 0 3px black,
+        0 0 4px skyblue,
+        0 0 11px skyblue,
+        0 0 19px skyblue,
+        0 0 40px skyblue,
+        0 0 80px skyblue, 
+        0 0 90px skyblue;      
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }
+}    
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+
+@keyframes rotate {
+    from {
+      transform: rotate(40deg);
+    }
+    50%
+    {
+        transform: rotate(10deg);
+
+    }
+    to {
+      transform: rotate(40deg);
+
+    }
+}
+/* ---------------------1page end-------------------------------- */
+/* ---------------------2page start ----------------------------- */
+.section2{
+    /* border: 10px solid blue;  */
+    width:100%;
+    /* margin-top: ; */
+    height:100vh; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+.sentence{
+    /* border: 4px solid red; */
+    height: 30%; 
+    text-align:center;
+    justify-content: center;
+    font-size:200%;
+    font-weight:540%;
+    font-weight: bold;
+    color: white; /*<sentence -> 'p' tag >*/
+    background: cover;
+}
+.sentence > span {
+    font-family:human;
+    text-shadow:
+    1px 0px 3px black,
+    0px  1px 3px black,
+    0 0 4px skyblue,
+    0 0 11px skyblue;
+    color: pink; /*<sentence -> 'h1' tag >*/
+}
+
+/*------------------------------타이머-------------------------*/
+.dateCard{/*타이머 영역*/
+    width: 100%;
+    height: 30%;
+    text-align: center; 
+}
+.dateCard > .number{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 10px solid saddlebrown; */
+}
+ .number > .timer-component {/*[숫자 + 단위]*/
+    width: 7%;
+    height: 80%;
+} 
+.timer-component >.getTime{/*숫자*/
+    
+    font-weight: 720%;
+    font-size: 3rem;
+    line-height: 28px;
+    color: pink;
+    display: flex;
+    justify-content: center;
+    transform: translateX(10%); /*강제로 센터 맞추기 위함*/
+    
+}
+.timer-component > .time-subtitle{/*단위*/
+    font-weight: 300%;
+    font-size: 1rem;
+    padding-top: 10%;
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+}
+.timer-colon {/* : */
+    font-weight: 650%;
+    font-size: 2.4rem;
+    color: #f1b818;
+    padding-bottom: 2%;/*숫자 옆으로 가로라인 맞춤*/
+}
+#gif
+{
+    position: absolute;
+    bottom: 20%;
+    height: 20%;
+    left: 50%;
+    /* transform:translateX(-%); */
+    animation-name:running;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    transform: translateX(150%);
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+@keyframes running
+{
+    from{
+        transform: translateX(-300%);
+
+    }
+    to
+    {
+        transform: translateX(220%);
+
+    }
+}
+
+
+/* ----------------------2page end------------------------------- */
+/* ----------------------3page start----------------------------- */
+.content .cnt03 .movie
+{
+    height: 100%;
+    width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+/* animation: fadeInUp 2s ease-out; */
+}
+/* ----------------------3page end------------------------------- */
+/* ----------------------4page start------------------------------- */
+
+.content .cnt04 section{
+    width:100%;
+    height:100vh; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    box-sizing: border-box;
+}
+.content .cnt04 .container{
+    width:100%;
+    height:100%;
+    display: flex;/*수평정렬*/
+    flex-direction: row;/*열*/
+    flex-wrap: wrap;/*한줄로*/
+    justify-content: space-evenly;/*중앙*/
+    align-content: center/*;중앙*/
+}
+.content .cnt04 .container>div{
+    border: 5px solid skyblue;
+    padding: 3%;
+    height: 73%;
+    background-color: rgb(56,77,100);
+    box-shadow:
+    1px 0px 3px skyblue,
+    0px  1px 3px skyblue,
+    0 0 4px skyblue,
+    0 0 11px skyblue,
+    0 0 19px skyblue,
+    0 0 40px skyblue;
+}
+
+.content .cnt04 .box1{
+    /* border : 2px solid pink; */
+    width:30%;
+    height:50%;
+    font-weight: 930%;/*두께*/
+}
+.content .cnt04 .box2{
+    /* border : 3px solid orange; */
+    width:30%;
+    height:50%;
+
+}
+.content .cnt04 .box3{
+    /* border : 4px solid blue;테두리 */
+    width:35%;/*너비*/
+    height:50%;/*높이*/
+}
+
+.content .cnt04 .box3 > .benefit{
+    /* border: 7px solid black;  */
+    width: 100px;
+    font-weight: bold;/*글자 굵기*/
+}
+.content .cnt04 .container .title
+{
+    font-size: 3vw;
+    color: white;
+    text-shadow:
+        0 0 4px black,
+        0 0 11px black,
+        0 0 19px skyblue,
+        0 0 40px skyblue,
+        0 0 80px skyblue;
+    font-weight: bold;
+    padding-bottom: 7%;
+}
+.content .cnt04 .container .sub_title
+{
+    font-size: 1.4vw;
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+}
+.content .cnt04 .container .contents
+{
+    font-size : 1.1vw;
+    opacity: 1;
+    color: white;
+}
+
+/* ----------------------4page emd----------------------------- */
+/* ----------------------5page start----------------------------- */
+.content .cnt05 .prize
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+.content .cnt05 .prize #celebrate
+{
+    display: flex;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content .cnt05 .prize .title
+{
+    width: 100%;
+    text-shadow: 5px 10px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    text-align: center;
+    height: 50%;;
+    font-weight: bold;   
+    text-shadow:
+    1px 0px 3px black,
+    0px  1px 3px black,
+    0 0 4px black,
+    0 0 11px black,
+    0 0 19px black,
+    0 0 40px black,
+    0 0 80px black;
+}
+.content .cnt05 .prize span{
+    color: #ff4040;
+    font-size: 6rem;   
+    text-shadow:
+    1px 0px 3px black,
+    0px  1px 3px black,
+    0 0 4px black,
+    0 0 11px black,
+    0 0 19px black,
+    0 0 40px black,
+    0 0 80px skyblue;
+}
+.content .cnt05 .prize #celebrate h1
+{
+    height: 50%;
+    
+}
+.content .cnt05 .prize #celebrate .prize-container
+{
+    height: 50%;
+    /* overflow-x: hidden; */
+    width: 100%;
+    margin-bottom: 10%;
+    
+}
+.content .cnt05 .prize #celebrate .prize-container img{
+    height: 80%;
+    background-color: rgba(0,0,0,0);
+    opacity: 0.9;
+    border-radius: 10%;
+    border: 15px double skyblue ;
+    /* box-shadow: 20px 15px 14px black; */
+    width: 50%;
+    /* top: 0%; */
+    padding: 5%;
+    box-shadow:
+    1px 0px 3px skyblue,
+    0px  1px 3px skyblue,
+    0 0 4px skyblue,
+    0 0 11px skyblue,
+    0 0 19px skyblue,
+    0 0 40px skyblue;
+    /* 0 0 80px skyblue; */
+
+}
+
+/* ----------------------5page end------------------------ */
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 6 page startㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.content .cnt06 .info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    height: 70%;
+    
+}
+.content .cnt06 .info .title
+{
+    background-color: rgba(0,0,0,0);
+    /* border: 5px solid #blackr; */
+    border-radius: 10%;
+    border: 5px solid white;
+    /* box-shadow: 5px 5px 15px silver; */
+    font-size: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1%;
+    margin-top: 3.7%;
+    box-shadow:
+    1px 0px 3px skyblue,
+    0px  1px 3px skyblue,
+    0 0 4px skyblue,
+    0 0 11px skyblue,
+    0 0 19px skyblue,
+    0 0 40px skyblue,
+    0 0 80px skyblue;
+
+}
+
+.content .cnt06 .info .main_content
+{
+    margin: 0.3%;
+    color: white;
+    font-size: 1.7rem;
+    
+}
+
+/*ㅡㅡㅡㅡㅡ 자동 슬라이드ㅡㅡㅡㅡ */
+
+.swiper-container {
+    /* background-color: white; */
+    /* opacity: 0.7; */
+	height: 30%;
+    width: 75%;
+    margin-top: 2%;
+}
+
+
+.swiper-slide {
+	text-align:center;
+	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+.swiper-slide img {
+    height: 30%;
+    width: 60%;
+} 
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 6 page endㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 화면 하단에 버튼ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ ㅡㅡ */
+
+#info_btn {
+    z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    height: 10% ;
+    width: 10%;
+    color:white;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0);
+    font-size: 2vw;
+    border:3px solid skyblue;
+    /* box-shadow: 0px 5px 15px gray; */
+    cursor:pointer;
+    text-shadow:0px 1px 0px #2c2c2c;
+    text-decoration:none;
+    font-family:Arial;
+    outline:none;
+    box-shadow:
+    1px 0px 3px skyblue,
+    0px  1px 3px skyblue,
+    0 0 4px skyblue,
+    0 0 11px skyblue,
+    0 0 19px skyblue,
+    0 0 40px skyblue,
+    0 0 80px skyblue;
+}
+#info_btn:hover{
+    color: skyblue;
+    border-left: 0px;
+    border-right: 0px;
+}
+button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:5px;
+    width:0;
+    background: skyblue;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+  
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 화면 하단에 버튼ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ ㅡㅡ */
