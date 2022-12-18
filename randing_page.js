@@ -1,7 +1,6 @@
 history.scrollRestoration = "manual"
 $(document).ready(function()
 {
-
 $('.dateCard').hide();
 $('iframe').hide();
 $('#info_btn').hide();
