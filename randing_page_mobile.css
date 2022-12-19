@@ -326,6 +326,7 @@ iframe
 .content .cnt04 .container .sub_title
 {
     width: 30%;
+    margin-top:-2.5%;
     height: 10%;
     font-size: 2vw;
     color: whitesmoke;
@@ -334,7 +335,7 @@ iframe
 }
 .content .cnt04 .container .contents
 {
-    margin-top:-3.5%;
+    margin-top:-2.5%;
     margin-left:40%;
     font-size : 1.5vw;
     opacity: 1;
