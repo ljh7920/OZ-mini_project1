@@ -6,8 +6,9 @@ $('iframe').hide();
 $('#info_btn').hide();
 $(".header").hide();
 $(".header").hide();
-var countDownDate = new Date(2022,11,24,23,59,59).getTime();//기한:오늘 부터 ~12월 19일 24시까지 남은 시간
 
+var countDownDate = new Date(2022,11,24,23,59,59).getTime();//기한:오늘 부터 ~12월 19일 24시까지 남은 시간
+// var countDownDate = new Date("Dec 19, 2022, 24:00:00").getTime();//기한:오늘 부터 ~12월 19일 24시까지 남은 시간
 var x = setInterval(function() {
 
   
@@ -102,6 +103,7 @@ var scroll = function(){
         {
             $('#info_btn').hide();
             $(".header").hide();
+            $("#hamberger").hide();
         }
         else
         {
@@ -234,3 +236,7 @@ $(function(){
     }
   });
 });
+
+function show_navi(){
+    $("ul").toggle();
+}

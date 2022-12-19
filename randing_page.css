@@ -3,13 +3,22 @@
     font-family: "Human";
     src: url("./font/HMKMRHD.TTF") format("truetype");
     font-weight: normal;
-  } 
+  }
+
+#hamberger
+{
+    position: fixed;
+    top : 0%;
+    width: 15%;
+    height: 8%;
+    right:0%;
+    z-index: 10;
+    display: none;
+} 
 *
 {
     margin:0;padding:0; text-align: left;
-    /* font-weight: human; */
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 body .content .cnt01, .cnt03, .cnt05
@@ -128,9 +137,10 @@ html, body{
   }
 /*---------------네비게이션-------------------*/
 ul, ol{
-    list-style:none
+    list-style:none;
 }
 .header{
+    display :"";
     opacity: 0.8;
     position:fixed;
     z-index:10;
@@ -589,7 +599,7 @@ justify-content: center;
 .content .cnt05 .prize #celebrate h1
 {
     height: 50%;
-    
+
 }
 .content .cnt05 .prize #celebrate .prize-container
 {
@@ -631,7 +641,6 @@ justify-content: center;
     align-items: center;
     padding-top: 6%;
     height: 70%;
-    
 }
 .content .cnt06 .info .title
 {
@@ -640,7 +649,7 @@ justify-content: center;
     border-radius: 10%;
     border: 5px solid white;
     /* box-shadow: 5px 5px 15px silver; */
-    font-size: 2vw;
+    font-size: 2.5rem;
     padding-left: 20px;
     padding-right: 20px;
     font-weight: bold;
@@ -662,7 +671,7 @@ justify-content: center;
 {
     margin: 0.3%;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     
 }
 

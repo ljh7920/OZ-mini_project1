@@ -1,3 +1,6 @@
+.header ul{
+    display: none;
+}
 .header ul li{
     width: 30%;
 }
@@ -9,6 +12,10 @@
 {
     background-color: black;
     z-index: 10;
+}
+#hamberger
+{
+    display:block;
 }
 /* ------------------------1페이지 ----------------------*/
 .content .cnt01 .section1 .row{ /*페이지 전체*/
