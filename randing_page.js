@@ -185,22 +185,40 @@ $(function(){
         var phone = $("#phone_value").val();
         if(!name)
         {
-            alert("이름을 입력하세요");
+            swal({
+                title:"실패",
+                text: "이름을 확인하세요!",                
+                timer:3000,
+              });
             return;
         }
         if(!phone)
         {
-            alert("전화번호를 입력하세요");
+            swal({
+                title:"실패",
+                text: "전화번호를 확인하세요!",
+                timer:3000,
+
+              });
             return;
         }
         else if (phone.length <=10)
         {
-            alert("전화번호를 확인하세요");
+            swal({
+                title:"실패",
+                text: "전화번호를 확인하세요!",
+                timer:3000,
+
+              });
             return;
         }
+        swal({
+            title:"제출 완료",
+            text : "곧 연락드리겠습니다",
+            icon: "success",
+          });
         value.push($("#name_value").val());
         value.push($("#phone_value").val());
-        console.log(value);
         modalClose(); //모달 닫기 함수 호출
         //컨펌 이벤트 처리
     });

@@ -508,7 +508,7 @@ justify-content: center;
 }
 .content .cnt04 .container .title
 {
-    font-size: 2vw;
+    font-size: 3vw;
     color: white;
     text-shadow:
         0 0 4px black,
@@ -695,7 +695,6 @@ justify-content: center;
     right: 20px;
     border: none;
     padding: 15px;
-    text-align: center;
     height: 10% ;
     width: 10%;
     color:white;
@@ -717,6 +716,9 @@ justify-content: center;
     0 0 19px skyblue,
     0 0 40px skyblue,
     0 0 80px skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #info_btn:hover{
     color: skyblue;
