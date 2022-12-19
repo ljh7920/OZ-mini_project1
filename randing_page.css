@@ -8,6 +8,8 @@
 {
     margin:0;padding:0; text-align: left;
     /* font-weight: human; */
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     
 }
 body .content .cnt01, .cnt03, .cnt05
