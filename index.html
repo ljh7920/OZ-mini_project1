@@ -37,12 +37,12 @@
                 <div class = input_info >
                     <div class = "name">
                         <p class = "value">이름</p>
-                        <input id = "name_value" placeholder="홍길동">
+                        <input type ="text" id = "name_value" placeholder="홍길동" required>
                     </div>
                     <div class = "phone">
                         <p class = "value">전화번호</p>
-                        <input id = "phone_value" type="text" 
-                        placeholder="010-1234-5678"
+                        <input id = "phone_value" type="tel" 
+                        placeholder="010-1234-5678" required
     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
                     </div>
                     <Br>
@@ -164,24 +164,19 @@
 
 
                 <div class="box2 box"><p class = "title">02. 접수 방법<p>
-                    <div class="sub_title"><p>> 얼리버드 VIP 접수<br>(12월 6일~12월 10일)</p></div>
+                    <div class="sub_title"><p>> 얼리버드 접수<br>(12월 6일~12월 10일)</p></div>
                         <div class="contents"><p> -패키지 선착순 구매를 통해 접수</p> </div>   
                         <div class="contents"><p>-구매처: 카카오 선물하기</p></div>   
                         <div class="contents"><p>-NextRunner 매장(강남, 신사, 홍대, 잠실)</p></div>         
-                    <div class="sub_title"><p>> 일반접수<br>(12월 12일~12월 23일):<br>선착순 접수</div>
-                        <div class="contents"><p>-공식홈페이지(https://ozcodingschool.com/) 및 NextRunner 매장 (강남, 신사, 홍대, 잠실)</p></div>
                 </div>
 
 
                 <div class="box3 box"> <p class = "title">03. RUN OZ VIP</p>
                     <div class="sub_title"><p>> 대상자</p></div>
-                        <div class="contents"><p>-얼리버드 vip접수자 </p></div>   
                         <div class="contents"><p> -일반 접수자중 early bird VIP 9만원권 사용 소지자<p></div>         
                     <div class="sub_title"><p>> 혜택</p></div>
                         <div class="contents"><p>-VIP special package</p></div>
                         <div class="contents"><p>-대회 현장 vip라운지 제공</p></div>
-                        <div class="contents"><p>-게토레이, 삼다수, 이한별CEO 로고 티셔츠 등</p></div>
-                        <div class="contents"><p>-아이폰 13, 맥북 프로 중 택 1</p></div>
                 </div>
                 <hr width = "100%" color = "white" size = "10">
             </div>
@@ -240,5 +235,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="./randing_page.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
