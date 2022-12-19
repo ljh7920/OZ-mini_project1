@@ -638,7 +638,7 @@ justify-content: center;
     border-radius: 10%;
     border: 5px solid white;
     /* box-shadow: 5px 5px 15px silver; */
-    font-size: 3rem;
+    font-size: 2vw;
     padding-left: 20px;
     padding-right: 20px;
     font-weight: bold;
@@ -660,7 +660,7 @@ justify-content: center;
 {
     margin: 0.3%;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     
 }
 
